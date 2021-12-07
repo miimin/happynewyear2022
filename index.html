@@ -17,7 +17,7 @@
 
 <!--3Dモデル-->
 　　　　　　　　<a-assets>
-　　　　　　　　　　　　<a-asset-item id="3Dmodel" src="./ARTORA.gltf"></a-asset-item>
+　　　　　　　　　　　　<a-asset-item id="3Dmodel" src="ARTORA.gltf"></a-asset-item>
      </a-assets>
  <!-- ライトの設定ここから -->
     <a-light type="directional" color="#FFF" intensity="0.5" position="-1 1 2"></a-light>
@@ -25,7 +25,7 @@
 <!-- ライトの設定ここまで -->
 
 <!-- マーカーの上に表示させるモデルの設定ここから -->
-     <a-marker preset="custom" type="pattern" url="./pattern-QR_897188.patt">
+     <a-marker preset="custom" type="pattern" url="pattern-QR_897188.patt">
      <a-entity gltf-model="#model" position="0 0 0" scale="0.5 0.5 0.5" rotation="0 0 0" animation-mixer>
      <a-animation  attribute="rotation" to="0 360 0" dur="7000" repeat="indefinite" easing="linear"></a-animation>
      </a-entity>
