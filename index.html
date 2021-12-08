@@ -10,7 +10,7 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <!-- AR.js ライブラリの読み込み -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-  
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.7/aframe/build/aframe-ar.js"></script>
   <!-- A-Frame の VR空間に AR.js を紐づける（デバッグUIを非表示） -->
   <a-scene embedded arjs="debugUIEnabled:false;">
  
@@ -20,11 +20,7 @@
     <a-asset-item id="mtl" src="untitled.mtl"></a-asset-item>   <!-- mtlファイル -->
   </a-assets>
  
-  <!-- マーカーを登録（プリセットされている「hiro」マーカー） -->
-  <a-marker preset="hiro">
-    <!-- マーカーの場所に箱を置く（見やすいようにワイヤーフレーム表示） -->
-    <a-box position="0 0.5 0" wireframe="true"></a-box>
-  </a-marker>
+
  
   <!-- マーカーを登録（プリセットされている「人」マーカー） -->
  <a-marker preset="custom" type="pattern" url="QR.patt">
@@ -41,6 +37,9 @@
  
     <!-- AR用のカメラを置く -->
     <a-entity camera></a-entity>
+ 
+    
+    
  
   </a-scene>
  
